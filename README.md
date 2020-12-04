@@ -7,7 +7,9 @@ $ npm install
 # to run tests:
 
 iOs:
+
 $ npm run ios
 
 android:
+
 $ npm run android
