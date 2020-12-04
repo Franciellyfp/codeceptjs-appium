@@ -1,0 +1,23 @@
+{
+  "name": "appsqazando",
+  "version": "1.0.0",
+  "description": "mobile automation",
+  "main": "index.js",
+  "scripts": {
+    "android": "codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": {\"platform\": \"Android\", \"app\": \"/Users/frfpedroso/Desktop/apk/app-release.apk\", \"desiredCapabilities\": { \"appPackage\": \"com.qazandoapp\", \"appActivity\": \"MainActivity\", \"deviceName\": \"pixel\", \"platformVersion\": \"9\" }}}} ' ",
+    "ios": "codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": {\"platform\": \"iOS\", \"app\": \"/Users/frfpedroso/Desktop/apk/qazandoapp.app\", \"desiredCapabilities\": { \"deviceName\": \"iPhone 12 Pro Max\", \"platformVersion\": \"14.2\" }}}} ' ",
+    "test": "npx codeceptjs run --steps"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.0.2",
+    "mochawesome": "^6.2.1",
+    "node-random-name": "^1.0.1",
+    "random-number": "0.0.9",
+    "webdriverio": "^6.10.2"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
